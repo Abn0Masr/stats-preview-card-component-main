@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: hsl(233deg, 47%, 7%);
+}
+main .box {
+  display: flex;
+  justify-content: space-between;
+  width: 29cm;
+  height: 446px;
+  background: hsl(244deg, 38%, 16%);
+  border-radius: 10px;
+  overflow: hidden;
+}
+main .box .info {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  padding-right: 6rem;
+  width: 15.7125cm;
+  height: 100%;
+  gap: 2rem;
+}
+main .box .info h1 {
+  font-size: 2em;
+  color: hsl(0deg, 0%, 100%);
+  font-family: "Inter", sans-serif;
+}
+main .box .info h1 span {
+  color: hsl(277deg, 64%, 61%);
+}
+main .box .info p {
+  font-size: 1em;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  color: hsla(0deg, 0%, 100%, 0.75);
+  line-height: 30px;
+}
+main .box .info .states {
+  margin: 32px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  color: hsla(0deg, 0%, 100%, 0.6);
+  text-transform: uppercase;
+  padding-right: 5rem;
+}
+main .box .info .states span {
+  display: flex;
+  flex-direction: column;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 30px;
+}
+main .box .info .states span span {
+  color: hsla(0deg, 0%, 100%, 0.6);
+  font-size: 0.5em;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+main .box .image {
+  position: relative;
+  background: hsl(277deg, 86%, 36%);
+}
+main .box .image img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  mix-blend-mode: multiply;
+  opacity: 0.8;
+}
+
+@media (max-width: 375px) {
+  main {
+    height: -moz-max-content;
+    height: max-content;
+    padding: 1.25rem 0;
+  }
+  main .box {
+    width: 8.7cm;
+    height: -moz-max-content;
+    height: max-content;
+    flex-direction: column-reverse;
+  }
+  main .box .image {
+    height: -moz-max-content;
+    height: max-content;
+    max-height: 271.56px;
+  }
+  main .box .image img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    mix-blend-mode: multiply;
+    opacity: 0.8;
+  }
+  main .box .info {
+    padding: 2rem 1rem;
+    width: 100%;
+    text-align: center;
+  }
+  main .box .info .states {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 0;
+  }
+}/*# sourceMappingURL=index.css.map */
